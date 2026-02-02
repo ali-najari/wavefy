@@ -1,0 +1,35 @@
+$mobile: 640px;
+$tablet: 1024px;
+
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+
+  @media (max-width: $mobile) {
+    padding: 16px;
+    gap: 20px;
+  }
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+
+  @media (max-width: $mobile) {
+    font-size: 22px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+
+  @media (max-width: $mobile) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}

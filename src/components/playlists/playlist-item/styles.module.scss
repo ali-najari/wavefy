@@ -1,0 +1,37 @@
+$mobile: 640px;
+
+.mainWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-decoration: none;
+
+  &:hover .imageWrapper {
+    transform: scale(1.05);
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.25s ease;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+
+  @media (max-width: $mobile) {
+    font-size: 14px;
+  }
+}

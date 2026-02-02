@@ -1,0 +1,86 @@
+$mobile: 480px;
+$tablet: 768px;
+
+.mainWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 15px;
+  gap: 14px;
+  user-select: none;
+}
+
+/* =========================
+   OPTION BUTTONS
+========================= */
+.optionBtn {
+  background: transparent;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ICONS */
+.icon {
+  width: 18px;
+  height: 18px;
+  opacity: 0.7;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.optionBtn:hover .icon {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* ACTIVE STATE */
+.active {
+  .icon {
+    opacity: 1;
+  }
+}
+
+/* =========================
+   DESKTOP ONLY
+========================= */
+@media (hover: hover) {
+  .optionBtn:hover .icon {
+    opacity: 1;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: $tablet) {
+  .mainWrapper {
+    gap: 12px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: $mobile) {
+  .mainWrapper {
+    gap: 10px;
+  }
+
+  .icon {
+    width: 22px;
+    height: 22px;
+    opacity: 1;
+  }
+
+  .optionBtn:hover .icon {
+    transform: none;
+  }
+}

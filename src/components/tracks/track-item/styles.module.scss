@@ -1,0 +1,154 @@
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1240px;
+
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  transition: 0.25s ease;
+  position: relative;
+
+  @media (max-width: $mobile) {
+    width: 80%;
+    transform: scale(0.95);
+    transform-origin: top center;
+  }
+}
+
+/* Hover فقط برای device هایی که hover دارن */
+@media (hover: hover) {
+  .mainWrapper:hover {
+    transform: scale(1.03);
+  }
+
+  .mainWrapper:hover .playBtn {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* IMAGE */
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 14px;
+  overflow: hidden;
+  user-select: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 55%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent);
+    pointer-events: none;
+  }
+}
+
+.cover {
+  object-fit: cover;
+}
+
+/* PLAY BUTTON */
+.playBtn {
+  position: absolute;
+  bottom: 100px;
+  right: 12px;
+
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transform: translateY(8px);
+  transition: 0.25s ease;
+}
+
+/* TEXT */
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 6px;
+
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(6px);
+
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.title {
+  font-size: clamp(5px, 1.2vw, 14px);
+  font-weight: 600;
+  color: #fff;
+}
+
+.subtitle {
+  font-size: clamp(10px, 1vw, 13px);
+  color: #c1c1c1;
+  text-decoration: none;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: $desktop) {
+  .title {
+    font-size: 10px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: $tablet) {
+  .playBtn {
+    bottom: 80px;
+    width: 25px;
+    height: 25px;
+    opacity: 1;
+    transform: none;
+  }
+
+  .title {
+    font-size: 8.5px;
+  }
+
+  .subtitle {
+    font-size: 10px;
+  }
+}
+
+
+/* 📱 MOBILE */
+@media (max-width: $mobile) {
+  .playBtn {
+    bottom: 80px;
+    width: 25px;
+    height: 25px;
+    opacity: 1;
+    transform: none;
+  }
+
+  .title {
+    font-size: 8px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+}

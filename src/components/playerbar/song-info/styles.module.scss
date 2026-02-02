@@ -1,0 +1,102 @@
+$mobile: 480px;
+$tablet: 768px;
+
+.mainWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0; 
+}
+
+/* ──────────────────────────────── */
+/* Cover */
+/* ──────────────────────────────── */
+.cover {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+    user-select: none;
+  }
+}
+
+/* ──────────────────────────────── */
+/* Text */
+/* ──────────────────────────────── */
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+
+  .songName {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fcfcfc;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 220px;
+  }
+
+  .artistName {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(252, 252, 252, 0.6);
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 220px;
+  }
+}
+
+/* ──────────────────────────────── */
+/* Tablet */
+/* ──────────────────────────────── */
+@media (max-width: $tablet) {
+  .cover {
+    width: 44px;
+    height: 44px;
+  }
+
+  .rightSide {
+    .songName {
+      font-size: 13px;
+      max-width: 160px;
+    }
+
+    .artistName {
+      font-size: 12px;
+      max-width: 160px;
+    }
+  }
+}
+
+/* ──────────────────────────────── */
+/* Mobile */
+/* ──────────────────────────────── */
+@media (max-width: $mobile) {
+  .cover {
+    padding-left: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .rightSide {
+    .songName {
+      font-size: 12px;
+      max-width: 200px;
+    }
+
+    .artistName {
+      font-size: 11px;
+      max-width: 120px;
+    }
+  }
+}

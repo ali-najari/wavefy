@@ -1,0 +1,10 @@
+.mainWrapper{
+    width: 100%;
+    // padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    max-width: 1600px;
+    margin: 0 auto;
+}

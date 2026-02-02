@@ -1,0 +1,94 @@
+$mobile: 640px;
+$tablet: 1024px;
+
+.mainWrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 30px;
+
+  @media (max-width: $tablet) {
+    gap: 24px;
+  }
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .imageWrapper {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    @media (max-width: $tablet) {
+      width: 220px;
+      height: 220px;
+    }
+
+    @media (max-width: $mobile) {
+      width: 180px;
+      height: 180px;
+    }
+  }
+
+  .cover {
+    object-fit: cover;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: $mobile) {
+      align-items: center;
+    }
+
+    .name {
+      font-size: 46px;
+      font-weight: 800;
+
+      @media (max-width: $tablet) {
+        font-size: 36px;
+      }
+
+      @media (max-width: $mobile) {
+        font-size: 28px;
+      }
+    }
+
+    .genre {
+      font-size: 14px;
+      color: #cfcfcf;
+      margin-top: 6px;
+    }
+
+    .controls {
+      margin-top: 16px;
+      display: flex;
+      gap: 12px;
+
+      @media (max-width: $mobile) {
+        justify-content: center;
+      }
+    }
+
+    .playBtn {
+      background: #fcfcfc;
+      border: none;
+      padding: 10px 22px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

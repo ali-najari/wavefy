@@ -1,0 +1,20 @@
+{
+  "playlists": [
+    {
+      "id": "Dang_Show_Album",
+      "name": "Dang Show Album",
+      "description": "The best Dang Show's songs",
+      "coverUrl": "/covers/DangShowAlbum.jpg",
+      "songs": ["song_001", "song_002"],
+      "creator": "artist_001"
+    },
+    {
+      "id": "Ebrahim_Album",
+      "name": "Ebrahim Album",
+      "description": "Ebrahim is the best album of Mohsen Chavoshi, realesed in 2018",
+      "coverUrl": "/covers/ebrahim.jpg",
+      "songs": ["song_004", "song_005","song_006","song_007"],
+      "creator": "artist_002"
+    }
+  ]
+}

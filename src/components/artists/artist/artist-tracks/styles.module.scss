@@ -1,0 +1,22 @@
+$mobile: 640px;
+
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (max-width: $mobile) {
+      justify-content: center;
+      align-items: center;
+  }
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+
+  @media (max-width: $mobile) {
+    grid-template-columns: 1fr;
+  }
+}

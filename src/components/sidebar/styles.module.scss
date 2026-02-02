@@ -1,0 +1,90 @@
+/* breakpoints */
+$mobile: 640px;
+$tablet: 1024px;
+
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  gap: 16px;
+  width: 240px;
+  background-color: #212124;
+  height: 83.5vh;
+  transition: width 0.3s ease;
+
+  .mainParts {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      text-decoration: none;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #fcfcfc;
+
+      &:hover {
+        color: #00ffff;
+      }
+    }
+  }
+
+  .myCollectionTitle,
+  .myPlaylistTitle {
+    font-size: 12px;
+    font-weight: 500;
+    color: #9898a6;
+  }
+
+  .myCollection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    text-decoration: none;
+
+    .text {
+      font-size: 12px;
+      font-weight: 500;
+      color: #fcfcfc;
+      white-space: nowrap;
+      transition: opacity 0.2s ease;
+    }
+  }
+
+  .icons {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+}
+
+/* ───────────── Tablet ───────────── */
+@media (max-width: $tablet) {
+  .mainWrapper {
+    width: 80px;
+    padding: 0 6px;
+
+    .mainParts a {
+      text-align: center;
+      padding: 12px 0;
+    }
+
+    .myCollection {
+      justify-content: center;
+    }
+
+    .text,
+    .myCollectionTitle,
+    .myPlaylistTitle {
+      display: none;
+    }
+  }
+}
+
+/* ───────────── Mobile ───────────── */
+@media (max-width: $mobile) {
+  .mainWrapper {
+    display: none;
+  }
+}

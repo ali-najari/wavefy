@@ -1,0 +1,235 @@
+$mobile: 480px;
+$tablet: 768px;
+
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  user-select: none;
+}
+
+/* =========================
+   CONTROL BUTTONS
+========================= */
+.controlBar {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 4px;
+  }
+
+  .icons {
+    width: 20px;
+    height: 20px;
+  }
+
+  .icons2 {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0.5);
+
+    &.active {
+      filter: brightness(1.5);
+    }
+  }
+}
+
+/* =========================
+   SEEK BAR
+========================= */
+.seekWrapper {
+  width: 100%;
+  display: flex;
+  height: 24px;
+  align-items: center;
+  padding: 0 8px;
+
+  .time {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 5px;
+    color: #fcfcfc;
+    user-select: none;
+    width: 35px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  &:hover .seekInput::-webkit-slider-thumb {
+    opacity: 1;
+  }
+
+  &:hover .seekInput::-moz-range-thumb {
+    opacity: 1;
+  }
+}
+
+/* =========================
+   INPUT RANGE
+========================= */
+.seekInput {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  border-radius: 999px;
+  appearance: none;
+  -webkit-appearance: none;
+
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff var(--seek-progress),
+    #4c4e54 var(--seek-progress),
+    #4c4e54 100%
+  );
+
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  &:focus {
+    outline: none;
+  }
+
+  /* WEBKIT TRACK */
+  &::-webkit-slider-runnable-track {
+    background: transparent;
+    height: 4px;
+    border-radius: 999px;
+  }
+
+  /* WEBKIT THUMB */
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    margin-top: -4px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 5;
+  }
+
+  /* FIREFOX TRACK */
+  &::-moz-range-track {
+    background: #4c4e54;
+    height: 4px;
+    border-radius: 999px;
+  }
+
+  /* FIREFOX PROGRESS */
+  &::-moz-range-progress {
+    background: white;
+    height: 4px;
+    border-radius: 999px;
+  }
+
+  /* FIREFOX THUMB */
+  &::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border: none;
+    background: white;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  /* EDGE */
+  &::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+    height: 4px;
+  }
+
+  &::-ms-fill-lower {
+    background: white;
+  }
+
+  &::-ms-fill-upper {
+    background: #4c4e54;
+  }
+
+  &::-ms-thumb {
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    border: none;
+  }
+
+  /* SHOW THUMB WHILE DRAGGING */
+  &.showThumb::-webkit-slider-thumb {
+    opacity: 1;
+  }
+
+  &.showThumb::-moz-range-thumb {
+    opacity: 1;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: $tablet) {
+  .controlBar {
+    gap: 12px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: $mobile) {
+  .mainWrapper {
+    gap: 12px;
+  }
+
+  .controlBar {
+    gap: 16px;
+
+    .icons {
+      width: 22px;
+      height: 22px;
+    }
+
+    .icons2 {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .seekWrapper {
+    align-self: center;
+    width: 90%;
+    padding: 0;
+
+    .time {
+      font-size: 11px;
+      width: 30px;
+    }
+  }
+
+  .seekInput {
+    &::-webkit-slider-thumb {
+      opacity: 1;
+    }
+
+    &::-moz-range-thumb {
+      opacity: 1;
+    }
+  }
+}

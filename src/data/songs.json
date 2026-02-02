@@ -1,0 +1,81 @@
+{
+  "songs": [
+    {
+      "id": "song_001",
+      "title": "Khata Kardam",
+      "artist_name": "Dang Show",
+      "artistId": "artist_001",
+      "album": "xxx",
+      "duration": 244,
+      "audioUrl": "/music/khatakardam.mp3",
+      "coverUrl": "/covers/khatakardam.jpg",
+      "releaseDate": "2017-05-01"
+    },
+    {
+      "id": "song_002",
+      "title": "Motivated by Madness",
+      "artist_name": "Dang Show",
+      "artistId": "artist_001",
+      "album": "xxx",
+      "duration": 240,
+      "audioUrl": "/music/Motivated by Madness.mp3",
+      "coverUrl": "/covers/Motivated by Madness.jpg",
+      "releaseDate": "2015-08-25"
+    },
+    {
+      "id": "song_003",
+      "title": "Parvaneha",
+      "artist_name": "Mohsen Chavoshi ",
+      "artistId": "artist_002",
+      "album": "xxx",
+      "duration": 273,
+      "audioUrl": "/music/Parvaneha.mp3",
+      "coverUrl": "/covers/Parvaneha.jpg",
+      "releaseDate": "2011-08-25"
+    },
+    {
+      "id": "song_004",
+      "title": "Bebor Be Name Khodavandat",
+      "artist_name": "Mohsen Chavoshi ",
+      "artistId": "artist_002",
+      "album": "Ebrahim_Album",
+      "duration": 292,
+      "audioUrl": "/music/Bebor Be Name Khodavandat.mp3",
+      "coverUrl": "/covers/ebrahim.jpg",
+      "releaseDate": "2018-08-25"
+    },
+    {
+      "id": "song_005",
+      "title": "Hamrahe Khak Arreh",
+      "artist_name": "Mohsen Chavoshi ",
+      "artistId": "artist_002",
+      "album": "Ebrahim_Album",
+      "duration": 321,
+      "audioUrl": "/music/Hamrahe Khak Arreh.mp3",
+      "coverUrl": "/covers/ebrahim.jpg",
+      "releaseDate": "2018-08-25"
+    },
+    {
+      "id": "song_006",
+      "title": "Vasiyat",
+      "artist_name": "Mohsen Chavoshi ",
+      "artistId": "artist_002",
+      "album": "Ebrahim_Album",
+      "duration": 230,
+      "audioUrl": "/music/Vasiyat.mp3",
+      "coverUrl": "/covers/ebrahim.jpg",
+      "releaseDate": "2018-08-25"
+    },
+    {
+      "id": "song_007",
+      "title": "To Dar Masafate Barani",
+      "artist_name": "Mohsen Chavoshi ",
+      "artistId": "artist_002",
+      "album": "Ebrahim_Album",
+      "duration": 220,
+      "audioUrl": "/music/To Dar Masafate Barani.mp3",
+      "coverUrl": "/covers/ebrahim.jpg",
+      "releaseDate": "2018-08-25"
+    }
+  ]
+}

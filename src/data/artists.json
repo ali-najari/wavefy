@@ -1,0 +1,26 @@
+{
+  "artists": [
+    {
+      "id": "artist_001",
+      "name": "DangShow",
+      "imageUrl": "/covers/DangShowAlbum.jpg",
+      "description": "Iranina band...",
+      "nationality": "Iran",
+      "genre":"Pop",
+      "followers":2555566,
+      "topTracks": ["song_001", "song_002"],
+      "playlists": ["Dang_Show_Album"]
+    },
+    {
+      "id": "artist_002",
+      "name": "Mohsen Chavoshi",
+      "imageUrl": "/covers/Mohsen-Chavoshi.jpg",
+      "description": "Iranina singer...",
+      "nationality": "Iran",
+      "genre":"Pop",
+      "followers": 5555566,
+      "topTracks": ["song_003", "song_004", "song_005","song_006"],
+      "playlists": ["Ebrahim_Album"]
+    }
+  ]
+}
