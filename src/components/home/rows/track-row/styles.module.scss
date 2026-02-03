@@ -14,6 +14,6 @@ $desktop: 1280px;
 
 @media (max-width: $mobile) {
   .cardWrapper {
-    flex: 0 0 calc((100% - 2 * 85px) / 1);
+    flex: 0 0 calc((100% - 1 * 2px) / 2);
   }
 }

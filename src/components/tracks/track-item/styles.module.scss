@@ -10,7 +10,6 @@ $desktop: 1240px;
   position: relative;
 
   @media (max-width: $mobile) {
-    width: 80%;
     transform: scale(0.95);
     transform-origin: top center;
   }

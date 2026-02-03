@@ -1,13 +1,15 @@
-$mobile: 640px;
+$mobile: 480px;
+$tablet: 786px;
 
 .mainWrapper {
   display: flex;
   flex-direction: column;
+  color: #fcfcfc;
 
-      @media (max-width: $mobile) {
-        justify-content: center;
-        align-items: center;
-    }
+  @media (max-width: $mobile) {
+    justify-content: center;
+    align-items: center;
+  }
 
   .grid {
     display: grid;
@@ -15,6 +17,11 @@ $mobile: 640px;
     align-items: center;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 20px;
+
+    @media (max-width: $tablet) {
+      grid-template-columns: repeat(auto-fill, minmax(180px, 2fr));
+      gap: 16px;
+    }
 
     @media (max-width: $mobile) {
       grid-template-columns: repeat(2, 1fr);

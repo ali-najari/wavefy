@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Wavefy 🎧
 
-## Getting Started
+A modern **music streaming web application** inspired by Spotify, built as a **portfolio-ready project** to demonstrate real-world front-end architecture, state management, and responsive UI design.
 
-First, run the development server:
+Wavefy focuses on clean UX, scalable structure, and production-level patterns using **Next.js App Router**.
+
+---
+
+## ✨ Features
+
+* 🎵 Play / Pause / Next / Previous tracks
+* 🔁 Repeat & 🔀 Shuffle support
+* 📃 Queue management with source awareness (playlist / single / artist)
+* 🧠 Global audio state handled via Redux Toolkit
+* 📱 Fully responsive design (Desktop / Tablet / Mobile)
+* 👆 Touch-friendly horizontal scrolling on mobile (no hover dependency)
+* 🎨 Smooth animations & transitions
+* 🧩 Reusable and scalable component architecture
+
+---
+
+## 🧱 Tech Stack
+
+* **Framework:** Next.js (App Router)
+* **Language:** TypeScript
+* **State Management:** Redux Toolkit
+* **Styling:** SCSS Modules
+* **Media Handling:** HTML5 Audio API
+* **Routing:** Next.js dynamic routes
+
+---
+
+## 📱 Responsive Design
+
+Wavefy is designed with a **mobile-first mindset**:
+
+* Desktop: Grid-based layouts with hover interactions
+* Tablet: Reduced columns, icon-focused UI
+* Mobile:
+
+  * Smaller cards
+  * Always-visible play button (no hover)
+  * Horizontal swipe scrolling instead of arrows
+
+Breakpoints used:
+
+```scss
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1280px;
+```
+
+---
+
+## 🖼 Screenshots
+
+### Desktop
+
+![Desktop Artist](./screenshots/artist-desktop.png)
+
+### Tablet
+
+![Tablet Artist](./screenshots/artist-tablet.png)
+
+### Mobile
+
+![Mobile Artist](./screenshots/artist-mobile.png)
+
+### Player Bar
+
+![Player Bar](./screenshots/player-bar.png)
+
+---
+
+## 🧠 Architecture Highlights
+
+* Separation of **UI & Logic** via hooks
+* Audio side-effects handled outside components
+* Redux state normalized for scalability
+* Reusable card components (Track / Playlist / Artist)
+* Consistent responsive rules across the app
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ali-najari/wavefy.git
+cd wavefy
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📌 Project Purpose
 
-## Learn More
+This project was built to:
 
-To learn more about Next.js, take a look at the following resources:
+* Demonstrate **real-world front-end skills**
+* Showcase **state management with Redux Toolkit**
+* Apply **responsive design principles** correctly
+* Serve as a **portfolio / resume project**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠 Future Improvements
 
-## Deploy on Vercel
+* Authentication & user playlists
+* Backend integration (API / database)
+* Search functionality
+* Volume & equalizer enhancements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 👤 Author
+
+**Ali-Najari**
+Junior Front-End Developer
+
+---
+
+⭐ If you like this project, feel free to star the repository!

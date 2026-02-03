@@ -44,8 +44,6 @@ const PlaylistHeader = ({ playlistId, name, imageUrl, description }: PlaylistHea
         source,
       })
     );
-
-    console.log("play playlist", playlistId);
   };
 
   return (
